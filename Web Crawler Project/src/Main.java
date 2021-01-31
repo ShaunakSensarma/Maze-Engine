@@ -1,4 +1,3 @@
-
 import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,11 +8,11 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
  
-public class crawler {
+public class Main {
 	public static DB db = new DB();
  
 	public static void main(String[] args) throws SQLException, IOException {
-	//	db.runSql2("TRUNCATE Record;");
+		db.runSql2("TRUNCATE Record;");
 		processPage("http://www.mit.edu");
 	}
  
